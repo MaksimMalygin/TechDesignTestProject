@@ -26,17 +26,10 @@ public class WarriorAnimation : MonoBehaviour
             Vector3 mousePosition = Input.mousePosition;
             Vector2 clickPosition = mainCamera.ScreenToWorldPoint(mousePosition);
             Collider2D pressedCollider = Physics2D.OverlapPoint(clickPosition, layers);
-            print(pressedCollider);
-            print(myCollider);
             if (pressedCollider == myCollider)
             {
-                animator.SetTrigger("Walk");
+                animator.SetTrigger("Patrol");
             }
         }
-    }
-
-    public void FlipSprite()
-    {
-        sRenderer.flipX = !sRenderer.flipX;
     }
 }

@@ -6,6 +6,7 @@ public class Pawn : MonoBehaviour
 {
     Animator animator;
     SpriteRenderer sRenderer;
+    AudioSource buildSound;
     Tower towerScript;
     Vector3 startPosition;
     Vector3 currentDestination;
@@ -17,6 +18,7 @@ public class Pawn : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         sRenderer = GetComponent<SpriteRenderer>();
+        buildSound = GetComponent<AudioSource>();
         startPosition = transform.position;
     }
 
@@ -35,24 +37,22 @@ public class Pawn : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, currentDestination, speed * Time.deltaTime);
             if (transform.position == currentDestination)
             {
+                animator.SetTrigger("Stop");
                 inMove = false;
+                //определяем пришли ли мы к башне или на старт
                 if (currentDestination != startPosition)
                 {
-                    animator.SetTrigger("Build");
                     currentDestination = startPosition;
-                }
-                else
-                {
-                    animator.SetTrigger("Idle");
+                    buildSound.Play();
                 }
             }
         }
     }
 
-    public void GoBuild(Vector3 coordinates, Tower script)
+    public void GoBuild(Vector3 towerCoordinates, Tower script)
     {
-        currentDestination = coordinates;
-        animator.SetTrigger("Go");
+        currentDestination = towerCoordinates;
+        animator.SetBool("GoingToBuild", true);//идём к башне
         inMove = true;
         towerScript = script;
     }
@@ -61,5 +61,6 @@ public class Pawn : MonoBehaviour
     {
         inMove = true;
         towerScript.Rebuid();
+        animator.SetBool("GoingToBuild", false);//идём на старт
     }
 }
