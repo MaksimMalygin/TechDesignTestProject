@@ -10,7 +10,7 @@ public class Tower : MonoBehaviour
     int hp = 3;
     Sprite originalSprite;
     [SerializeField] Sprite destroedSprite;
-    [SerializeField] Pawn myPawn;
+    [SerializeField] PawnAnimation myPawn;
     [SerializeField] ParticleSystem particleSystemHit;
     [SerializeField] ParticleSystem particleSystemRebuild;
     bool pawnBusy = false;
