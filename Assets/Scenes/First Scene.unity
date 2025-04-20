@@ -1714,7 +1714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2103672553517055200, guid: af118e612f4280642a59fcae9c95aab7, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9810,6 +9810,10 @@ PrefabInstance:
     - target: {fileID: 255273097339848467, guid: af118e612f4280642a59fcae9c95aab7, type: 3}
       propertyPath: m_Name
       value: Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103672553517055200, guid: af118e612f4280642a59fcae9c95aab7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
