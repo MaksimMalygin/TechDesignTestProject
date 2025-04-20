@@ -23,11 +23,6 @@ public class Tower : MonoBehaviour
         originalSprite = sRenderer.sprite;
     }
 
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Dynamite"))

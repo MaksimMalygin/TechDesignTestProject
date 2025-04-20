@@ -425,8 +425,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043C\u0435\u043D\u044E"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: aa397f66854a3444dbf2af61321e87ca, type: 2}
-  m_sharedMaterial: {fileID: 9100293082899848115, guid: aa397f66854a3444dbf2af61321e87ca, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3fcec4a5b93d7d14bbdeaf5057f7f3ab, type: 2}
+  m_sharedMaterial: {fileID: 3825684711904988048, guid: 3fcec4a5b93d7d14bbdeaf5057f7f3ab, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -588,6 +588,10 @@ PrefabInstance:
       propertyPath: m_text
       value: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
       objectReference: {fileID: 0}
+    - target: {fileID: 45378783571224292, guid: edda5f6223d0cf24ba0cf493cafa3979, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2145559874083424618, guid: edda5f6223d0cf24ba0cf493cafa3979, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 7.7099915
@@ -722,14 +726,14 @@ PrefabInstance:
     - target: {fileID: 45378783571224292, guid: edda5f6223d0cf24ba0cf493cafa3979, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: aa397f66854a3444dbf2af61321e87ca, type: 2}
+      objectReference: {fileID: 11400000, guid: 3fcec4a5b93d7d14bbdeaf5057f7f3ab, type: 2}
     - target: {fileID: 45378783571224292, guid: edda5f6223d0cf24ba0cf493cafa3979, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 9100293082899848115, guid: aa397f66854a3444dbf2af61321e87ca, type: 2}
     - target: {fileID: 45378783571224292, guid: edda5f6223d0cf24ba0cf493cafa3979, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2145559874083424618, guid: edda5f6223d0cf24ba0cf493cafa3979, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1138,14 +1142,14 @@ PrefabInstance:
     - target: {fileID: 45378783571224292, guid: edda5f6223d0cf24ba0cf493cafa3979, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: aa397f66854a3444dbf2af61321e87ca, type: 2}
+      objectReference: {fileID: 11400000, guid: 3fcec4a5b93d7d14bbdeaf5057f7f3ab, type: 2}
     - target: {fileID: 45378783571224292, guid: edda5f6223d0cf24ba0cf493cafa3979, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 9100293082899848115, guid: aa397f66854a3444dbf2af61321e87ca, type: 2}
     - target: {fileID: 45378783571224292, guid: edda5f6223d0cf24ba0cf493cafa3979, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3048305934855005479, guid: edda5f6223d0cf24ba0cf493cafa3979, type: 3}
       propertyPath: m_Name
